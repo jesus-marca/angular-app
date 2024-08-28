@@ -1,0 +1,58 @@
+<!-- <h1>Dashboard</h1>
+<hr />
+<h3>User</h3>
+<pre>{{ user() | json }}</pre>
+<br />
+<span routerLink="/auth/login">regresar</span>
+<router-outlet></router-outlet> -->
+<button class="logout" routerLink="/auth/login" ><img class="" src="/assets/images_dashboard/login.svg" alt=""></button>
+
+<button class="login" (click)="onLogout()" ><img class="" src="/assets/images_dashboard/logout.svg" alt=""></button>
+
+<nav class="menu">
+
+  <input type="checkbox" class="menu__checked" id="check" />
+  <label class="menu__label" for="check">
+    <img
+      src="/assets/images_dashboard/close.svg"
+      alt=""
+      class="menu__hamburguer menu__hamburguer--hidden"
+    />
+    <img
+      src="/assets/images_dashboard/menu.svg"
+      alt=""
+      class="menu__hamburguer menu__hamburguer--show"
+    />
+    <img
+      src="/assets/images_dashboard/menu.svg"
+      alt=""
+      class="menu__hamburguer menu__hamburguer--show"
+    />
+  </label>
+  <div class="menu__links">
+    <a href="#grida" class="menu__link">Inicio</a>
+    <a href="#" class="menu__link">Acerca</a>
+    <a href="#" class="menu__link">Contacto</a>
+  </div>
+</nav>
+<section class="grid" id="grida">
+  <img src="/assets/images_dashboard/fondo1.jpg" alt="" class="grid__img" />
+  <div class="grid__texts">
+    <h2 class="grid__title">aprende css perro</h2>
+    <div class="grid__pargraphs">
+      <p class="grid__paragraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+        sunt, in consequatur voluptate eius, veritatis sequi expedita nulla
+        aperiam ex iste ducimus possimus earum voluptates eligendi ipsam
+        dolores, fugiat vitae.m
+      </p>
+      <p class="grid__paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quia a
+        incidunt ullam maiores, sapiente delectus ab dolorem expedita tempore?
+        Perferendis, asperiores! Fugiat, voluptatibus inventore. Quam ab quae
+        laudantium quas.
+      </p>
+    </div>
+    <a href="#" class="cta">entra ahora</a>
+  </div>
+</section>
